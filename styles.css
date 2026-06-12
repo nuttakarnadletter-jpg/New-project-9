@@ -706,9 +706,9 @@ h1 span {
   --promo-subtext: rgba(255, 255, 255, 0.92);
   --product-image: url("assets/product-gift-cutout2.png");
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 236, 91, 0.82) 0%, rgba(255, 236, 91, 0.34) 34%, rgba(255, 236, 91, 0) 68%),
-    radial-gradient(circle at 84% 78%, rgba(255, 250, 210, 0.98) 0%, rgba(255, 250, 210, 0.48) 36%, rgba(255, 250, 210, 0) 70%),
-    linear-gradient(135deg, #ffd94a 0%, #fff3a6 44%, #fffce2 100%);
+    radial-gradient(circle at 18% 20%, rgba(255, 238, 146, 0.56) 0%, rgba(255, 238, 146, 0.24) 36%, rgba(255, 238, 146, 0) 68%),
+    radial-gradient(circle at 84% 76%, rgba(232, 255, 188, 0.46) 0%, rgba(232, 255, 188, 0.2) 34%, rgba(232, 255, 188, 0) 68%),
+    linear-gradient(135deg, #fff8d6 0%, #fff3bd 42%, #f9f5d8 70%, #eef8d6 100%);
 }
 
 .product-card.gift .product-visual::after {
