@@ -1754,11 +1754,15 @@ h1 span {
 }
 
 .revise-hero[data-overlay="mangosteen"] {
-  --hero-overlay: radial-gradient(ellipse at 78% 100%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.18) 28%, rgba(0, 0, 0, 0) 56%),
-    linear-gradient(0deg, rgba(117, 229, 69, 0.34) 0%, rgba(34, 135, 96, 0.1) 42%, rgba(0, 0, 0, 0.32) 100%),
+  --hero-overlay: linear-gradient(0deg, rgba(117, 229, 69, 0.34) 0%, rgba(34, 135, 96, 0.1) 42%, rgba(0, 0, 0, 0.32) 100%),
     radial-gradient(circle 78vw at -20% 124%, rgba(117, 229, 69, 1) 0%, rgba(117, 229, 69, 0.96) 12%, rgba(117, 229, 69, 0.58) 28%, rgba(34, 135, 96, 0.22) 42%, rgba(34, 135, 96, 0) 56%),
-    linear-gradient(90deg, rgba(117, 229, 69, 0.58) 0%, rgba(117, 229, 69, 0.28) 18%, rgba(34, 135, 96, 0) 42%),
-    linear-gradient(90deg, rgba(12, 56, 24, 0.56) 0%, rgba(12, 56, 24, 0.34) 28%, rgba(12, 56, 24, 0) 54%, rgba(12, 56, 24, 0) 100%);
+    linear-gradient(90deg, rgba(117, 229, 69, 0.58) 0%, rgba(117, 229, 69, 0.28) 18%, rgba(34, 135, 96, 0) 34%),
+    linear-gradient(90deg, rgba(12, 56, 24, 0.56) 0%, rgba(12, 56, 24, 0.34) 28%, rgba(12, 56, 24, 0) 40%);
+}
+
+.revise-hero[data-overlay="mangosteen"]::before {
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 44%, transparent 54%);
+  mask-image: linear-gradient(90deg, #000 0%, #000 44%, transparent 54%);
 }
 
 .revise-hero[data-overlay="packing"] {
@@ -1799,7 +1803,9 @@ h1 span {
 }
 
 .revise-hero-media img.hero-zoom-in {
-  transform: scale(1.06);
+  object-position: 66% center;
+  transform: scale(1.14);
+  transform-origin: 62% center;
 }
 
 .revise-hero-media img.is-active {
@@ -2372,7 +2378,7 @@ h1 span {
 .revise-standards-copy h2 {
   margin-bottom: 28px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2388,8 +2394,8 @@ h1 span {
 
 .revise-cert-row img {
   width: 100%;
-  height: 128px;
-  padding: 20px 22px;
+  height: 144px;
+  padding: 18px 18px;
   border: 1px solid rgba(255, 255, 255, 0.46);
   border-radius: 8px;
   object-fit: contain;
@@ -3094,8 +3100,8 @@ h1 span {
   }
 
   .revise-cert-row img {
-    height: 118px;
-    padding: 18px 20px;
+    height: 130px;
+    padding: 16px 16px;
   }
 }
 
