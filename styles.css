@@ -2209,6 +2209,7 @@ h1 span {
 }
 
 .revise-product-grid .product-card-link {
+  --product-bar-height: 4px;
   display: flex;
   height: 100%;
   min-width: 0;
@@ -2221,7 +2222,7 @@ h1 span {
 .revise-product-grid .product-card-link::before {
   content: "";
   display: block;
-  height: 4px;
+  height: var(--product-bar-height);
   background: var(--green-2);
   transition: height 0.24s ease, background-color 0.24s ease;
 }
@@ -2229,13 +2230,15 @@ h1 span {
 .revise-product-grid .product-card-link::after {
   content: "";
   position: absolute;
-  inset: 4px 0 auto;
+  top: var(--product-bar-height);
+  right: 0;
+  left: 0;
   z-index: 1;
   height: 260px;
-  background: linear-gradient(180deg, rgba(12, 56, 24, 0) 42%, rgba(12, 56, 24, 0.28) 70%, rgba(117, 229, 69, 0.62) 100%);
+  background: linear-gradient(180deg, rgba(12, 56, 24, 0) 42%, rgba(12, 56, 24, 0.2) 70%, rgba(34, 135, 96, 0.38) 100%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.24s ease;
+  transition: opacity 0.24s ease, top 0.24s ease;
 }
 
 .revise-product-grid img {
@@ -2314,6 +2317,7 @@ h1 span {
 
 .revise-product-grid .product-card-link:hover,
 .revise-product-grid .product-card-link:focus-visible {
+  --product-bar-height: 6px;
   border-color: rgba(34, 135, 96, 0.46);
   background: #fbfff7;
   box-shadow: 0 10px 24px rgba(12, 56, 24, 0.08);
@@ -2322,7 +2326,6 @@ h1 span {
 
 .revise-product-grid .product-card-link:hover::before,
 .revise-product-grid .product-card-link:focus-visible::before {
-  height: 6px;
   background: var(--green);
 }
 
