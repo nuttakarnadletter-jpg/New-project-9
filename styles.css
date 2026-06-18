@@ -2209,7 +2209,7 @@ h1 span {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(34, 135, 96, 0.16);
-  border-radius: 8px;
+  border-radius: 14px;
   background: #fff;
   box-shadow: none;
 }
@@ -2403,6 +2403,10 @@ h1 span {
   border-radius: 8px;
   object-fit: contain;
   background: #fff;
+}
+
+.revise-cert-row img:nth-child(n + 2) {
+  padding: 10px 10px;
 }
 
 .revise-partners {
@@ -3137,6 +3141,10 @@ h1 span {
   .revise-cert-row img {
     height: 130px;
     padding: 16px 16px;
+  }
+
+  .revise-cert-row img:nth-child(n + 2) {
+    padding: 9px 9px;
   }
 }
 
