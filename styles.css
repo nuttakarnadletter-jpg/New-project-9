@@ -2236,12 +2236,12 @@ h1 span {
 .revise-product-grid .product-card-link::after {
   content: "";
   position: absolute;
-  top: calc(var(--product-bar-height) + 12px);
-  right: 16px;
-  left: 16px;
+  top: var(--product-bar-height);
+  right: 0;
+  left: 0;
   z-index: 1;
-  height: 232px;
-  border-radius: 6px;
+  height: 260px;
+  border-radius: 0;
   background:
     radial-gradient(circle at 94% 96%, rgba(117, 229, 69, 0.46) 0%, rgba(117, 229, 69, 0.28) 14%, rgba(117, 229, 69, 0) 34%),
     linear-gradient(180deg, rgba(12, 56, 24, 0) 48%, rgba(12, 56, 24, 0.18) 74%, rgba(12, 56, 24, 0.34) 100%);
